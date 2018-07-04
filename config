@@ -120,7 +120,7 @@ else
 fi
 
 HTTP_FILTER_MODULES=`echo $HTTP_FILTER_MODULES \
-| sed "s/$next/$next ngx_http_brotli_filter_module/"`
+                     | sed "s/$next/$next ngx_http_brotli_filter_module/"`
 
 CFLAGS="$CFLAGS -Wno-deprecated-declarations"
 CORE_LIBS="$CORE_LIBS -lm"
